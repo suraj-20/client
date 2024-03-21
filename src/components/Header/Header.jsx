@@ -106,7 +106,7 @@ const Header = ({ type }) => {
           </h1>
            <p style={{margin:'0.8rem 1rem'}}>Dial up one of 120 proficient travel specialists</p>
           <div style={{display:'flex',marginTop:'17px',alignItems:'center'}} className="contact">
-          <img style={{width:'80px'}} src={img} alt="" />
+          <img className='img-3' style={{width:'80px'}} src={img} alt="" />
            <Link><h1 style={{fontWeight:'bolder',fontSize:'2rem', marginLeft:'20px'}}>(833) 436-0717</h1></Link>
           </div>
           <p className="headerDesc">

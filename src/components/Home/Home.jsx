@@ -3,6 +3,8 @@ import './Home.css';
 import Search from '../Layout/Search/Search';
 import Featured from '../Featured/Featured';
 import Testnomial from '../Layout/Testnomials/Testnomial';
+import Work from '../Work/Work';
+import SomeDetails from '../Work/SomeDetails';
 
 const Home = () => {
   return (
@@ -45,9 +47,17 @@ const Home = () => {
       </div>
     </div>
 
-<section>
+    <section>
 
-  <Testnomial/>
+      <Testnomial/>
+    </section>
+
+<section>
+  <Work/>
+</section>
+
+<section>
+  <SomeDetails/>
 </section>
   </>
 

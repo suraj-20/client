@@ -1,0 +1,88 @@
+.main-details{
+     height: 100%;
+     width: 100%;
+}
+
+.main-some-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin: 5rem 9.5rem;
+    border-radius: 8px;
+    padding: 5rem 2rem;
+    background-color: #f5f7f9;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.main-some-heading{
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.desc{
+    line-height: 22.5px;
+    font-size: 14px;
+    margin: 12px 0;
+    padding: 1rem 2rem;
+    letter-spacing: 1px;
+}
+
+.sub-some-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.consult-img{
+    width: 15rem;
+    margin: 0 20px;
+}
+
+.h2-k{
+
+    margin: 0 20px;
+    font-weight: 600;
+}
+.btn-8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003580;
+    color: white;
+    padding: 1rem 4rem;
+    border-radius: 56px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+}
+
+.icon-10{
+    color: #003580;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+}
+
+.number{
+ margin: 0 12px;
+ font-weight: 600;
+ font-size: 19px;
+}
+
+.hr{
+    margin: 2rem 1rem;
+    width: 100%;
+    line-height: 22px;
+
+    color: #d3dae1;
+}
