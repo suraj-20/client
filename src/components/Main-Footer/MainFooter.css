@@ -1,36 +1,66 @@
-.payment-icon{
-
+.payment-icon {
     width: 100%;
-   
-    
-   
 }
 
-.flex-box{
-
+.flex-box {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.main-footer{
-    margin: 1rem 8rem;
+.main-footer {
+    margin: 1rem 1rem; /* Adjust margin for better spacing on smaller screens */
 }
-.card-img{
+
+.card-img {
     width: 3rem;
 }
 
-.footer-hr{
-    margin: 3rem 2rem;
+.footer-hr {
+    margin: 2rem 0rem; /* Adjust margin for better spacing on smaller screens */
     color: #010101;
 }
-.paragraph{
+
+.paragraph {
     line-height: 16.5px;
     font-size: 11px;
     display: flex;
     flex-direction: column;
-    margin: 1rem 3rem;
-    color:gainsboro;
+    margin: 1rem 1rem; 
+    color: gainsboro;
 }
 
+@media screen and (max-width: 600px) {
+    .flex-box {
+        flex-direction: column;
+       
+    }
+
+    .card-img {
+        width: 20%;
+       
+    }
+
+    .footer-hr {
+       
+        width: 90%;
+    }
+
+    .paragraph {
+        width: 90%;
+        line-height: 12.5px;
+        font-size: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1rem 0;
+        color: gainsboro;
+    }
+
+    .footer-copyright{
+        width: 90%;
+      
+    }
+    
+}

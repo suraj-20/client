@@ -6,6 +6,7 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import { FaBed, FaCalendarAlt, FaUser } from 'react-icons/fa';
 import './Header.css';
+import PopUp from '../Layout/Pop-Up/PopUp';
 const img = require('../assets/images/agents2.4 (1).png')
 const img1 = require('../assets/images/wowfare-blue.png');
 
@@ -74,9 +75,11 @@ const Header = ({ type }) => {
       </Navbar>
 
       <div className="bottom">
-        <Link to={'/contact'}><h2>
-          Ring, ring, win! Dial us and get <span style={{ color: 'yellow', fontWeight: '800' }}>EXTRA $35</span> on your flight ticket
+        <Link className='first-div'><h2>
+          Ring, ring, win! Dial us and get <span style={{ color: 'yellow', fontWeight: '800' }}>EXTRA $35</span> on your flight ticket 
         </h2></Link>
+
+        <div className="second-div"><PopUp/></div>
       </div>
 
       <div className="header">
