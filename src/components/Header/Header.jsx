@@ -7,8 +7,6 @@ import { format } from "date-fns";
 import { FaBed, FaCalendarAlt, FaUser } from 'react-icons/fa';
 import './Header.css';
 const img = require('../assets/images/agents2.4 (1).png')
-
-
 const img1 = require('../assets/images/wowfare-blue.png');
 
 const Header = ({ type }) => {
@@ -28,7 +26,6 @@ const Header = ({ type }) => {
     room: 1,
   });
 
-  const navigate = useNavigate();
 
   const handleOption = (name, operation) => {
     setOptions((prev) => ({
@@ -75,6 +72,12 @@ const Header = ({ type }) => {
           <Navbar.Link href="#">Contact</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
+
+      <div className="bottom">
+        <Link to={'/contact'}><h2>
+          Ring, ring, win! Dial us and get <span style={{ color: 'yellow', fontWeight: '800' }}>EXTRA $35</span> on your flight ticket
+        </h2></Link>
+      </div>
 
       <div className="header">
         <div className="headerContainer">
@@ -221,11 +224,7 @@ const Header = ({ type }) => {
         </div>
       </div>
 
-      {/* <div className="bottom">
-        <h2>
-          Ring, ring, win! Dial us and get <span style={{ color: 'yellow', fontWeight: '800' }}>EXTRA $35</span> on your flight ticket
-        </h2>
-      </div> */}
+      
     </>
   );
 };

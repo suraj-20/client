@@ -5,6 +5,7 @@ import Featured from '../Featured/Featured';
 import Testnomial from '../Layout/Testnomials/Testnomial';
 import Work from '../Work/Work';
 import SomeDetails from '../Work/SomeDetails';
+import Banner from '../Layout/Banner/Banner';
 
 const Home = () => {
   return (
@@ -58,6 +59,11 @@ const Home = () => {
 
 <section>
   <SomeDetails/>
+</section>
+
+
+<section>
+  <Banner/>
 </section>
   </>
 
