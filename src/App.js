@@ -4,13 +4,20 @@ import './App.css';
 import Header from './components/Header/Header.jsx';
 import Home from './components/Home/Home.jsx';
 import MainFooter from './components/Main-Footer/MainFooter.jsx';
-import PopUp from './components/Layout/Pop-Up/PopUp.jsx';
+import UserOption from './components/Header/UserOption.jsx';
 
 
-function App() {
+
+function App({isAuthenticated, user}) {
+
+  
+
   return (
     <Router>
       <Header />
+
+      <UserOption/>
+
       <Routes>
 
       <Route path="/" element={<Home/>} />

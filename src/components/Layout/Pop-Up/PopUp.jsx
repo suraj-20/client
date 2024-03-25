@@ -17,7 +17,7 @@ const PopUp = () => {
     <Button style={{backgroundColor:'#3a424a'}} onClick={() => setOpenModal(true)}><FaArrowRightLong /></Button>
     <Modal show={openModal} size="md" onClose={() => setOpenModal(false)} popup>
       <Modal.Header />
-      <Modal.Body>
+      <Modal.Body className='popup-model'>
         <div className="pop-up-main text-center">
          <div className="pop-up-avatar">
             <img src={contact} alt="" />

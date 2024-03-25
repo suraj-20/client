@@ -1,3 +1,5 @@
+
+
 .pop-up-main{
     display: flex;
     flex-direction: column;
@@ -67,4 +69,97 @@
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .popup-model{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pop-up-avatar{
+        width: 40%;
+       
+    }
+    
+    .other-contact-details{
+        margin: 5px;
+
+        
+    }
+    
+    .color-span{
+        color: #cc2d6f;
+        font-weight: 800;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .other-contact-h1{
+        font-size: 15px;
+        font-weight: 600;
+        
+    }
+    
+    .other-contact-link{
+        font-size: 12px;
+        margin-top: 3px;
+        font-weight: 700;
+        color: #003580;
+    }
+    
+    .promo-code{
+        margin: 2px;
+       
+    }
+    
+    .other-wrapper{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .other-details-call-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: #003580;
+        margin:1rem 0;
+        padding: 0 5px;
+    }
+    
+    .other-contact-p{
+        margin: 6px;
+    }
+    
+    .other-span-border{
+       border: dotted;
+        padding: 8px 10px;
+        border-radius: 28px;
+    }
+    
+    .other-contact-promo-code{
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 8px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
 }
