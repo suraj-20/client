@@ -58,7 +58,7 @@ const MainFooter = () => {
       </div>
       <div className="footer-copyright w-full bg-gray-700 px-4 py-6 sm:flex sm:items-center sm:justify-between">
         <Footer.Copyright href="#" by="WowFare" year={2024} />
-        <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+        <div className="flex space-x-6 sm:mt-0 sm:justify-center">
           <Footer.Icon href="#" icon={BsFacebook} />
           <Footer.Icon href="#" icon={BsInstagram} />
           <Footer.Icon href="#" icon={BsTwitter} />
