@@ -9,7 +9,7 @@ const Card = ({item}) => {
     <>
    
     <div className="featuredItem">
-      <Link className="featuredItem">
+      <Link to={"/searchflight"} className="featuredItem">
         <img
           src={item.image}
           alt={item.name}

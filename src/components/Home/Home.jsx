@@ -6,61 +6,65 @@ import Testnomial from "../Layout/Testnomials/Testnomial";
 import Work from "../Work/Work";
 import SomeDetails from "../Work/SomeDetails";
 import Banner from "../Layout/Banner/Banner";
+import Header from "../Header/Header";
 
 const Home = () => {
   return (
     <>
-      <div className="main-container">
-        <Search />
+      <div className="main-header">
+        <Header />
+        <div className="main-container">
+          <Search />
 
-        <div className="heading">
-          <h1>Most Popular Round-trip Flight Destinations</h1>
+          <div className="heading">
+            <h1>Most Popular Round-trip Flight Destinations</h1>
+          </div>
+          <div className="optionContainer">
+            <div className="btn">
+              <button>Europe</button>
+            </div>
+
+            <div className="btn">
+              <button>South America</button>
+            </div>
+
+            <div className="btn">
+              <button>South Asia</button>
+            </div>
+
+            <div className="btn">
+              <button>Middle East</button>
+            </div>
+
+            <div className="btn">
+              <button>Africa</button>
+            </div>
+
+            <div className="btn">
+              <button>Asia & Oceania</button>
+            </div>
+          </div>
+          <div className="homeContainer">
+            <Featured />
+          </div>
         </div>
-        <div className="optionContainer">
-          <div className="btn">
-            <button>Europe</button>
-          </div>
 
-          <div className="btn">
-            <button>South America</button>
-          </div>
+        <section>
+          <Testnomial />
+        </section>
 
-          <div className="btn">
-            <button>South Asia</button>
-          </div>
+        <section>
+          <Work />
+        </section>
 
-          <div className="btn">
-            <button>Middle East</button>
-          </div>
+        <section>
+          <SomeDetails />
+        </section>
 
-          <div className="btn">
-            <button>Africa</button>
-          </div>
-
-          <div className="btn">
-            <button>Asia & Oceania</button>
-          </div>
-        </div>
-        <div className="homeContainer">
-          <Featured />
-        </div>
+        <section>
+          <Banner />
+        </section>
       </div>
-
-      <section>
-        <Testnomial />
-      </section>
-
-      <section>
-        <Work />
-      </section>
-
-      <section>
-        <SomeDetails />
-      </section>
-
-      <section>
-        <Banner />
-      </section>
     </>
   );
 };

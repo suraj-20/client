@@ -1,20 +1,17 @@
-
-.bottom{
-
-    width: 100%;
-    height: 4rem;
-    background: #3a424a;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 2px;
-  
+.bottom {
+  width: 100%;
+  height: 4rem;
+  background: #3a424a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
-.first-div{
+.first-div {
   padding: 0 1rem;
 }
 
@@ -93,7 +90,6 @@
   opacity: 0;
   transform: scale(4);
 }
-
 
 .header {
   background-color: #003580;
@@ -228,64 +224,44 @@
   cursor: not-allowed;
 }
 
-
 @media screen and (max-width: 600px) {
-
-  .bottom{
-   
+  .bottom {
     letter-spacing: normal;
     width: 100vh;
-
+    display: none;
   }
 
-
-
-  .first-div{
-    
+  .first-div {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-      padding: 0 3px;
-    
-    
+    padding: 0 3px;
   }
 
-  .bottom-span{
-
+  .bottom-span {
     padding: 0 4px;
   }
 
-  .second-div{
-
-
+  .second-div {
   }
 
-
-  .contact{
- 
-    
+  .contact {
     margin-left: 15px;
     margin-bottom: 2.5rem;
   }
 
-  
-
-  h2{
-  
+  h2 {
     font-size: 10px;
     display: flex;
     justify-content: flex-start;
   }
 
-  .header{
-
-  
-  overflow-x: hidden;
-    
+  .header {
+    overflow-x: hidden;
   }
 
-  .headerList{
+  .headerList {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -293,7 +269,7 @@
     gap: 15px;
   }
 
-  .headerTitle{
+  .headerTitle {
     margin-left: 1rem;
     width: 90%;
     align-items: center;
@@ -302,19 +278,16 @@
     justify-content: center;
   }
 
-  span{
-   margin-right: 10rem;
-   
-  }
+  /* span {
+    margin-right: 10rem;
+  } */
 
-  .headerDesc{
+  .headerDesc {
     width: 90%;
     margin-left: 0.8rem;
   }
 
-  .headerBtn{
-   margin-left: 1rem;
+  .headerBtn {
+    margin-left: 1rem;
   }
-
-  
 }

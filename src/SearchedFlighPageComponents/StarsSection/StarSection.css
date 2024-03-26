@@ -1,0 +1,47 @@
+.starSection-container {
+  width: 90%;
+  margin: 3rem auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.starSection-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.starReviews {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.starReviews figure {
+  margin: 0;
+}
+
+.starReviews .verticalLine {
+  padding: 0 20px;
+}
+
+@media (max-width: 1100px) {
+  .starSection-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .starReviews {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .starSection-container h2 {
+    font-size: 1rem;
+  }
+  .starReviews {
+    gap: 1rem;
+  }
+}

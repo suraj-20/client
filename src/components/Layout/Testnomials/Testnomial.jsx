@@ -1,44 +1,13 @@
-import React, { useRef } from 'react';
-import { MdStarRate } from "react-icons/md";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import './Testonomials.css';
-const img = require('../../assets/images/reviews-logo-2.png')
-const imgL = require('../../assets/images/reviews-logo-3.png')
-const imgI = require('../../assets/images/reviews-logo-1.png')
-
+import React, { useRef } from "react";
+import StarSection from "../../../SearchedFlighPageComponents/StarsSection/StarSection";
+import ReviewSection from "../../../SearchedFlighPageComponents/ReviewsSection/ReviewSection";
 
 const Testnomial = () => {
-
-
   return (
-    <div className='sub'>
-    <div className="testnomial-header">
-      <div className="headin">
-        <h1 className='h-k'>81K+ of happy trips with WowFare</h1>
-      </div>
-      <div className="others">
-           <div style={{display:'flex',marginTop:'12px'}} className="star">
-           <img className='imgg' src={imgI} alt="" />
-           </div>
-      </div> |
-
-      <div className="others">
-       
-           <div style={{display:'flex'}} className="star">
-           <img className='imgg' src={img} alt="" />
-           </div>
-      </div> |
-
-      <div className="others">
-           <div style={{display:'flex'}} className="star">
-           <img className='imgg' src={imgL} alt="" />
-           </div>
-      </div> |
-    </div>
-      <Swiper
+    <div className="sub">
+      <StarSection />
+      <ReviewSection />
+      {/* <Swiper
         slidesPerView={4}
         spaceBetween={20}
         pagination={{
@@ -181,9 +150,9 @@ const Testnomial = () => {
           </div>
         </SwiperSlide>
        
-      </Swiper>
+      </Swiper> */}
     </div>
-  )
-}
+  );
+};
 
-export default Testnomial
+export default Testnomial;
