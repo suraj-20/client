@@ -6,6 +6,7 @@ import Home from "./components/Home/Home.jsx";
 import MainFooter from "./components/Main-Footer/MainFooter.jsx";
 import UserOption from "./components/Header/UserOption.jsx";
 import SearchedFligh from "./Pages/SearchedFlightPage/SearchedFligh.jsx";
+import LoginRegister from './components/Auth/LoginRegister.jsx';
 
 function App({ isAuthenticated, user }) {
   return (
@@ -16,8 +17,8 @@ function App({ isAuthenticated, user }) {
 
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/searchflight" element={<SearchedFligh />}></Route>
+        <Route path="/loginRegister" element={<LoginRegister />} />
       </Routes>
 
       <MainFooter />
