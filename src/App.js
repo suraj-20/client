@@ -11,8 +11,6 @@ import LoginRegister from './components/Auth/LoginRegister.jsx';
 
 function App() {
 
-  
-
   return (
     <Router>
       <Header />
