@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
-import { Avatar, Dropdown, Navbar } from 'flowbite-react';
+import { Navbar } from 'flowbite-react';
 import { FaCar, FaPlane, FaSearch, FaTaxi } from 'react-icons/fa';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import { FaBed, FaCalendarAlt, FaUser } from 'react-icons/fa';
 import './Header.css';
 import PopUp from '../Layout/Pop-Up/PopUp';
-import UserOption from './UserOption';
 const img = require('../assets/images/agents2.4 (1).png')
 const img1 = require('../assets/images/wowfare-blue.png');
 
-const Header = ({ type }) => {
-  const [destination, setDestination] = useState('');
+const Header = () => {
+  const location = useLocation();
+  const isLoginSignupPage = location.pathname === '/loginRegister';
+
+  const [ setDestination] = useState('');
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -28,7 +30,6 @@ const Header = ({ type }) => {
     room: 1,
   });
 
-
   const handleOption = (name, operation) => {
     setOptions((prev) => ({
       ...prev,
@@ -39,6 +40,11 @@ const Header = ({ type }) => {
   const handleSearch = () => {
     // Add functionality here
   };
+
+  // Don't render the header if on the login/signup page
+  if (isLoginSignupPage) {
+    return null;
+  }
 
   return (
     <>
@@ -97,12 +103,12 @@ const Header = ({ type }) => {
            <p style={{margin:'0.8rem 1rem'}}>Dial up one of 120 proficient travel specialists</p>
           <div style={{display:'flex',marginTop:'17px',alignItems:'center'}} className="contact">
           <img className='img-3' style={{width:'80px'}} src={img} alt="" />
-           <Link><h1 style={{fontWeight:'bolder',fontSize:'2rem', marginLeft:'20px'}}>(833) 436-0717</h1></Link>
+           <Link><h1 className='number-button'>(833) 436-0717</h1></Link>
           </div>
           <p className="headerDesc">
             Get rewarded for your travels – unlock instant savings of 10% or more with a free Lamabooking account
           </p>
-          <button className="headerBtn">Sign in / Register</button>
+          <button className="headerBtn"><Link to={'/loginRegister'}>Sign in / Register</Link></button>
 
           <div className="headerSearch">
             <div className="headerSearchItem">

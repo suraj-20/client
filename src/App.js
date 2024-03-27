@@ -5,10 +5,11 @@ import Header from './components/Header/Header.jsx';
 import Home from './components/Home/Home.jsx';
 import MainFooter from './components/Main-Footer/MainFooter.jsx';
 import UserOption from './components/Header/UserOption.jsx';
+import LoginRegister from './components/Auth/LoginRegister.jsx';
 
 
 
-function App({isAuthenticated, user}) {
+function App() {
 
   
 
@@ -21,6 +22,7 @@ function App({isAuthenticated, user}) {
       <Routes>
 
       <Route path="/" element={<Home/>} />
+      <Route path="/loginRegister" element={<LoginRegister/>} />
       
         
       </Routes>

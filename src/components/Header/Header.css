@@ -108,7 +108,7 @@
 .headerContainer {
   width: 100%;
   max-width: 1024px;
-  margin: 20px 0px 100px 0px;
+  margin: 1rem 0px 2rem 0px;
 }
 
 .headerContainer.listMode {
@@ -117,14 +117,14 @@
 
 .headerList {
   display: flex;
-  gap: 40px;
+  gap: 4rem;
   margin-bottom: 50px;
 }
 
 .headerListItem {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .headerListItem.active {
@@ -134,7 +134,7 @@
 }
 
 .headerDesc {
-  margin: 20px 0px;
+  margin: 1.5rem 0px;
 }
 
 .headerBtn {
@@ -142,20 +142,26 @@
   color: white;
   font-weight: 500;
   border: none;
-  padding: 10px;
+  padding: 1rem;
   cursor: pointer;
   border-radius: 10px;
+  
+}
+.number-button{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 1rem;
 }
 
 .headerSearch {
-  height: 30px;
+  height: 20%;
   background-color: white;
   border: 3px solid #febb02;
   display: flex;
   color: #000;
   align-items: center;
   justify-content: space-around;
-  padding: 10px 0px;
+  padding: 1rem 0px;
   border-radius: 5px;
   position: absolute;
   bottom: -25px;
@@ -170,7 +176,7 @@
 .headerSearchItem {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .headerSearchInput {
@@ -204,14 +210,14 @@
   width: 200px;
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .optionCounter {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 12px;
+  gap: 1rem;
+  font-size: 1rem;
   color: black;
 }
 
@@ -246,28 +252,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-      padding: 0 3px;
-    
+      padding: 0 0.4rem    
     
   }
 
   .bottom-span{
 
-    padding: 0 4px;
+    padding: 0 0.5rem;
   }
 
-  .second-div{
-
-
-  }
+ 
 
 
   .contact{
  
     
-    margin-left: 15px;
-    margin-bottom: 2.5rem;
+    margin-left: 1rem;
+    margin-bottom: 6rem;
+
   }
+
+ .number-button{
+  font-size: 1.3rem;
+ }
 
   
 
