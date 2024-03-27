@@ -271,9 +271,9 @@
     justify-content: flex-start;
   }
 
-  .header {
+  /* .header {
     overflow-x: hidden;
-  }
+  } */
 
   .headerList {
     align-items: center;

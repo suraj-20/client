@@ -170,7 +170,7 @@
   @media screen and (max-width: 600px) {
     .headerSearch {
       flex-direction: column;
-      bottom: 0;
+      bottom: -160px;
     }
 
     .headerSearchItem {
