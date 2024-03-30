@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "./Home.scss";
 import Search from "../Layout/Search/Search";
 import Featured from "../Featured/Featured";
 import Testnomial from "../Layout/Testnomials/Testnomial";

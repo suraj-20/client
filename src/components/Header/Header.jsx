@@ -1,26 +1,24 @@
-import React, { useState } from 'react';
-import { Navbar } from 'flowbite-react';
-import { FaCar, FaPlane, FaSearch, FaTaxi } from 'react-icons/fa';
-import { Link, useLocation } from 'react-router-dom';
-import { DateRange } from "react-date-range";
-import { format } from "date-fns";
-import { FaBed, FaCalendarAlt, FaUser } from 'react-icons/fa';
-import './Header.css';
-import PopUp from '../Layout/Pop-Up/PopUp';
-const img = require('../assets/images/agents2.4 (1).png')
-const img1 = require('../assets/images/wowfare-blue.png');
+import React, { useState } from "react";
+import { Navbar } from "flowbite-react";
+import { FaCar, FaPlane, FaTaxi } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
+import { FaBed } from "react-icons/fa";
+import "./Header.css";
+import PopUp from "../Layout/Pop-Up/PopUp";
+const img = require("../assets/images/agents2.4 (1).png");
+const img1 = require("../assets/images/wowfare-blue.png");
 
 const Header = () => {
   const location = useLocation();
-  const isLoginSignupPage = location.pathname === '/loginRegister';
+  const isLoginSignupPage = location.pathname === "/loginRegister";
 
-  const [ setDestination] = useState('');
+  const [setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
       startDate: new Date(),
       endDate: new Date(),
-      key: 'selection',
+      key: "selection",
     },
   ]);
   const [openOptions, setOpenOptions] = useState(false);
@@ -33,7 +31,7 @@ const Header = () => {
   const handleOption = (name, operation) => {
     setOptions((prev) => ({
       ...prev,
-      [name]: operation === 'i' ? options[name] + 1 : options[name] - 1,
+      [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
     }));
   };
 
@@ -50,11 +48,17 @@ const Header = () => {
     <>
       <Navbar className="nav" fluid>
         <Navbar.Brand href="https://flowbite-react.com">
-          <Link to={'/'}><img src={img1} className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /></Link>
+          <Link to={"/"}>
+            <img
+              src={img1}
+              className="mr-3 h-6 sm:h-9"
+              alt="Flowbite React Logo"
+            />
+          </Link>
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white"></span>
         </Navbar.Brand>
-       
-        <Navbar.Collapse style={{marginRight:'8rem'}}>
+
+        <Navbar.Collapse style={{ marginRight: "8rem" }}>
           <Navbar.Link href="#" active>
             Flights
           </Navbar.Link>
@@ -65,11 +69,22 @@ const Header = () => {
       </Navbar>
 
       <div className="bottom">
-        <Link className='first-div'><h2>
-          Ring, ring, win! Dial us and get <span className='bottom-span' style={{ color: 'yellow', fontWeight: '800' }}>EXTRA $35</span> on your flight ticket 
-        </h2></Link>
+        <Link className="first-div">
+          <h2>
+            Ring, ring, win! Dial us and get{" "}
+            <span
+              className="bottom-span"
+              style={{ color: "yellow", fontWeight: "800" }}
+            >
+              EXTRA $35
+            </span>{" "}
+            on your flight ticket
+          </h2>
+        </Link>
 
-        <div className="second-div"><PopUp/></div>
+        <div className="second-div">
+          <PopUp />
+        </div>
       </div>
 
       <div className="header">
@@ -77,147 +92,63 @@ const Header = () => {
           <div className="headerList">
             <div className="headerListItem active">
               <FaPlane />
-              <Link to={'/flights'} className='span'>Flights</Link>
+              <Link to={"/flights"} className="span">
+                Flights
+              </Link>
             </div>
 
             <div className="headerListItem">
               <FaBed />
-              <Link to={'/hotels'} className='span'>Hotels</Link>
+              <Link to={"/hotels"} className="span">
+                Hotels
+              </Link>
             </div>
 
             <div className="headerListItem">
               <FaCar />
-              <Link to={'/cars'} className='span'>Car Rental</Link>
+              <Link to={"/cars"} className="span">
+                Car Rental
+              </Link>
             </div>
 
             <div className="headerListItem">
               <FaTaxi />
-              <Link to={'/taxi'} className='span'>Airport Taxi</Link>
+              <Link to={"/taxi"} className="span">
+                Airport Taxi
+              </Link>
             </div>
           </div>
 
-          <h1  style={{ fontFamily: 'sans-serif', fontSize: '2rem', fontWeight: 'bold' }} className="headerTitle">
-            A lifetime of discounts? It's Genius.<br/>
-            Choose from <span style={{color:'yellow'}}>400+ Airlines</span>
+          <h1
+            style={{
+              fontFamily: "sans-serif",
+              fontSize: "2rem",
+              fontWeight: "bold",
+            }}
+            className="headerTitle"
+          >
+            A lifetime of discounts? It's Genius.
+            <br />
+            Choose from <span style={{ color: "yellow" }}>400+ Airlines</span>
           </h1>
-           <p style={{margin:'0.8rem 1rem'}}>Dial up one of 120 proficient travel specialists</p>
-          <div style={{display:'flex',marginTop:'17px',alignItems:'center'}} className="contact">
-          <img className='img-3' style={{width:'80px'}} src={img} alt="" />
-           <Link><h1 className='number-button'>(833) 436-0717</h1></Link>
-          </div>
-          <p className="headerDesc">
-            Get rewarded for your travels – unlock instant savings of 10% or more with a free Lamabooking account
+          <p style={{ margin: "0.8rem 1rem" }}>
+            Dial up one of 120 proficient travel specialists
           </p>
-          <button className="headerBtn"><Link to={'/loginRegister'}>Sign in / Register</Link></button>
-
-          <div className="headerSearch">
-            <div className="headerSearchItem">
-              <FaSearch  className="headerIcon" />
-              <input
-                type="text"
-                placeholder="Where do you want to go?"
-                className="headerSearchInput"
-                onChange={(e) => setDestination(e.target.value)}
-                style={{color:'black'}}
-              />
-            </div>
-
-            <div className="headerSearchItem">
-              <FaSearch  className="headerIcon" />
-              <input
-                type="text"
-                placeholder="Destination?"
-                className="headerSearchInput"
-                onChange={(e) => setDestination(e.target.value)}
-                style={{color:'black'}}
-              />
-            </div>
-
-            <div className="headerSearchItem">
-              <FaCalendarAlt  className="headerIcon" />
-              <span
-                onClick={() => setOpenDate(!openDate)}
-                className="headerSearchText"
-              >{`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
-                date[0].endDate,
-                "MM/dd/yyyy"
-              )}`}</span>
-              {openDate && (
-                <DateRange
-                  editableDateInputs={true}
-                  onChange={(item) => setDate([item.selection])}
-                  moveRangeOnFirstSelection={false}
-                  ranges={date}
-                  className="date"
-                  minDate={new Date()}
-                />
-              )}
-            </div>
-            <div className="headerSearchItem">
-              <FaUser className="headerIcon" />
-              <span
-                onClick={() => setOpenOptions(!openOptions)}
-                className="headerSearchText"
-              >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span>
-              {openOptions && (
-                <div className="options">
-                  <div className="optionItem">
-                    <span className="optionText">Adult</span>
-                    <div className="optionCounter">
-                      <button
-                        disabled={options.adult <= 1}
-                        className="optionCounterButton"
-                        onClick={() => handleOption("adult", "d")}
-                      >
-                        -
-                      </button>
-                      <span className="optionCounterNumber">
-                        {options.adult}
-                      </span>
-                      <button
-                        className="optionCounterButton"
-                        onClick={() => handleOption("adult", "i")}
-                      >
-                        +
-                      </button>
-                    </div>
-                  </div>
-                  <div className="optionItem">
-                    <span className="optionText">Children</span>
-                    <div className="optionCounter">
-                      <button
-                        disabled={options.children <= 0}
-                        className="optionCounterButton"
-                        onClick={() => handleOption("children", "d")}
-                      >
-                        -
-                      </button>
-                      <span className="optionCounterNumber">
-                        {options.children}
-                      </span>
-                      <button
-                        className="optionCounterButton"
-                        onClick={() => handleOption("children", "i")}
-                      >
-                        +
-                      </button>
-                    </div>
-                  </div>
-
-                </div>
-              )}
-            </div>
-
-            <div className="headerSearchItem">
-              <button className="headerBtn" onClick={handleSearch}>
-                Search
-              </button>
-            </div>
+          <div
+            style={{ display: "flex", marginTop: "17px", alignItems: "center" }}
+            className="contact"
+          >
+            <img className="img-3" style={{ width: "80px" }} src={img} alt="" />
+            <Link>
+              <h1 className="number-button">(833) 436-0717</h1>
+            </Link>
           </div>
+
+          <button className="headerBtn">
+            <Link to={"/loginRegister"}>Sign in / Register</Link>
+          </button>
         </div>
       </div>
-
-      
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react'
-import './SomeDetails.css'
+import './SomeDetails.scss'
 import { FaPhoneAlt,FaUserFriends,FaHeart } from "react-icons/fa";
 import { BiSolidPlaneAlt } from "react-icons/bi";
 import { IoDiamondSharp } from "react-icons/io5";
