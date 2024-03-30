@@ -1,9 +1,11 @@
 
+
 .home{
     padding-top: 10rem;
     text-align: center;
     gap: 2rem;
     flex-direction: column;
+   
 
 
 
@@ -112,21 +114,27 @@
   .optionContainer {
     margin-top: 50px;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
   
   @media screen and (max-width: 600px) {
+
+    *{
+      overflow-x: hidden;
+    } 
+    
     .optionContainer {
+
       
       flex-direction: column; 
       align-items: center; 
     }
   
     .btn {
-      width: 60%; /* Make buttons take full width on small screens */
-      margin-bottom: 10px; /* Add margin between buttons for better spacing */
+      width: 60%;
+      margin-bottom: 10px;
     }
   }
   

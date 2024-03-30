@@ -142,8 +142,9 @@
   color: white;
   font-weight: 500;
   border: none;
-  padding: 1rem;
+  padding: 0.7rem 2rem;
   cursor: pointer;
+  margin: 2rem 0;
   border-radius: 10px;
   
 }
@@ -237,10 +238,15 @@
 
 @media screen and (max-width: 600px) {
 
+  *{
+    overflow-x: hidden;
+  }
+
   .bottom{
    
     letter-spacing: normal;
     width: 100vh;
+    display: none;
 
   }
 
@@ -261,7 +267,6 @@
     padding: 0 0.5rem;
   }
 
- 
 
 
   .contact{
