@@ -142,9 +142,8 @@
   cursor: pointer;
   margin: 2rem 0;
   border-radius: 10px;
-  
 }
-.number-button{
+.number-button {
   font-size: 2rem;
   font-weight: 700;
   margin-left: 1rem;
@@ -232,12 +231,10 @@
 }
 
 @media screen and (max-width: 600px) {
-
-  .bottom{
-   
+  .bottom {
     letter-spacing: normal;
     width: 100vh;
-
+    display: none;
   }
 
   .first-div {
@@ -245,22 +242,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-      padding: 0 3px;
-    
-    
+    padding: 0 3px;
   }
 
-  .bottom-span{
-
+  .bottom-span {
     padding: 0 4px;
   }
 
- 
-
-
-  .contact{
- 
-    
+  .contact {
     margin-left: 15px;
     margin-bottom: 2.5rem;
   }

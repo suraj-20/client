@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { FaCalendarAlt } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
-import { DatePicker } from "react-datepicker"; // Import react-datepicker
+// import { DatePicker } from "react-datepicker"; // Import react-datepicker
 import "react-datepicker/dist/react-datepicker.css";
 import "./Search.scss";
 
 const Search = () => {
-  // const [checkInDate, setCheckInDate] = useState(null);
-  // const [checkOutDate, setCheckOutDate] = useState(null);
-  const [startDate, setStartDate] = useState(new Date());
 
   return (
     <>
